@@ -6,6 +6,7 @@
 <title>Kavish Enterprises | Pan India Transportation Services</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -27,6 +28,12 @@ top:0;
 z-index:1000;
 }
 
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
 .logo{
 font-size:28px;
 font-weight:bold;
@@ -36,6 +43,7 @@ nav ul{
 display:flex;
 list-style:none;
 gap:20px;
+align-items:center;
 }
 
 nav a{
@@ -44,6 +52,21 @@ text-decoration:none;
 font-weight:bold;
 }
 
+/* DRIVER BUTTON */
+.driver-btn{
+background:#d4a017;
+color:#fff !important;
+padding:8px 14px;
+border-radius:6px;
+font-weight:bold;
+text-decoration:none;
+}
+
+.driver-btn:hover{
+background:#b8860b;
+}
+
+/* HERO */
 .hero{
 background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
 url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1600&q=80');
@@ -80,6 +103,7 @@ border-radius:5px;
 font-weight:bold;
 }
 
+/* SECTIONS */
 section{
 padding:70px 8%;
 }
@@ -91,8 +115,7 @@ margin-bottom:40px;
 color:#5a3b1d;
 }
 
-.about,
-.contact{
+.about,.contact{
 background:#f7f7f7;
 }
 
@@ -111,15 +134,16 @@ text-align:center;
 }
 
 .card h3{
-margin-bottom:15px;
 color:#5a3b1d;
+margin-bottom:10px;
 }
 
 .fleet-box{
-background:#fff;
+background:white;
 padding:30px;
 border-radius:10px;
 box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
 }
 
 .contact-info{
@@ -129,6 +153,7 @@ text-align:center;
 font-size:18px;
 }
 
+/* FOOTER */
 footer{
 background:#5a3b1d;
 color:white;
@@ -136,6 +161,7 @@ text-align:center;
 padding:20px;
 }
 
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -149,26 +175,28 @@ font-weight:bold;
 box-shadow:0 2px 10px rgba(0,0,0,0.3);
 }
 
+/* DRIVER FLOAT BUTTON */
+.driver-float{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#5a3b1d;
+color:white;
+padding:12px 16px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 2px 10px rgba(0,0,0,0.3);
+z-index:999;
+}
+
 @media(max-width:768px){
-
-.hero-content h1{
-font-size:34px;
+.hero-content h1{font-size:34px;}
+.hero-content p{font-size:18px;}
+nav{flex-direction:column;gap:10px;}
+nav ul{flex-wrap:wrap;justify-content:center;}
 }
 
-.hero-content p{
-font-size:18px;
-}
-
-nav{
-flex-direction:column;
-gap:10px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-}
-}
 </style>
 </head>
 
@@ -185,30 +213,22 @@ justify-content:center;
 <li><a href="#contact">Contact</a></li>
 <li><a href="driver.html" class="driver-btn">Join as Driver</a></li>
 </ul>
+
 </nav>
 </header>
 
 <section class="hero">
 <div class="hero-content">
 <h1>Pan India Fuel, Oil, Chemical & Petrochemical Transportation</h1>
-
-<p>
-Reliable, Safe and Efficient Logistics Solutions Across India.
-Serving Industries with Professional Tanker Transportation Services.
-</p>
-
+<p>Reliable, Safe and Efficient Logistics Solutions Across India.</p>
 <a href="#contact" class="btn">Get In Touch</a>
 </div>
 </section>
 
 <section id="about" class="about">
 <h2 class="section-title">About Us</h2>
-
-<p style="max-width:1000px;margin:auto;text-align:center;font-size:18px;">
-Kavish Enterprises is a Navi Mumbai based transportation company
-specializing in Fuel, Oil, Chemical and Petrochemical logistics.
-We are committed to safe operations, timely deliveries and reliable
-service across India.
+<p style="max-width:900px;margin:auto;text-align:center;">
+Kavish Enterprises is a Navi Mumbai based transportation company providing safe tanker logistics across India.
 </p>
 </section>
 
@@ -218,23 +238,23 @@ service across India.
 <div class="services-grid">
 
 <div class="card">
-<h3>Fuel Transportation</h3>
-<p>Safe and reliable transportation of fuel products across India.</p>
+<h3>Fuel Transport</h3>
+<p>Safe fuel transportation services.</p>
 </div>
 
 <div class="card">
-<h3>Oil Transportation</h3>
-<p>Efficient movement of industrial and commercial oil products.</p>
+<h3>Oil Transport</h3>
+<p>Industrial oil logistics solutions.</p>
 </div>
 
 <div class="card">
-<h3>Chemical Transportation</h3>
-<p>Specialized tanker logistics for chemical transportation.</p>
+<h3>Chemical Transport</h3>
+<p>Specialized chemical tanker service.</p>
 </div>
 
 <div class="card">
-<h3>Petrochemical Transportation</h3>
-<p>Professional petrochemical logistics solutions nationwide.</p>
+<h3>Petrochemical</h3>
+<p>Nationwide petrochemical transport.</p>
 </div>
 
 </div>
@@ -242,71 +262,35 @@ service across India.
 
 <section id="fleet">
 <h2 class="section-title">Our Fleet</h2>
-
 <div class="fleet-box">
 <h3>14 Tyre Ashok Leyland Tanker</h3>
-<br>
 <p>35KL Stainless Steel Tanker</p>
 <p>Pan India Operations</p>
-<p>Reliable Long Distance Transportation</p>
-<p>Professional Logistics Solutions</p>
 </div>
 </section>
 
 <section id="contact" class="contact">
-
 <h2 class="section-title">Contact Us</h2>
 
 <div class="contact-info">
-
 <p><strong>Kavish Enterprises</strong></p>
-
-<br>
-
-<p>
-1001, 10th Floor, Crystal CHS Ltd., Jimmy Tower III,<br>
-Plot No. 21, Sector 17, Koparkhairane,<br>
-Navi Mumbai - 400709
-</p>
-
-<br>
-
-<p>Mobile: +91 9869175163</p>
-<p>Mobile: +91 7718828871</p>
-
-<br>
-
+<p>Navi Mumbai</p>
+<p>Mobile: 9869175163 / 7718828871</p>
 <p>Email: kavishenterprises812@gmail.com</p>
-
-<br>
-
-<p>GSTIN: 27BKVPD5589B1ZR</p>
-
 </div>
-
 </section>
 
 <footer>
-<p>© 2026 Kavish Enterprises | Pan India Fuel, Oil, Chemical & Petrochemical Transportation Services</p>
+<p>© 2026 Kavish Enterprises</p>
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919869175163" target="_blank">
 WhatsApp
 </a>
-<a href="driver.html" 
-style="
-position:fixed;
-bottom:80px;
-right:20px;
-background:#5a3b1d;
-color:white;
-padding:12px 16px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 2px 10px rgba(0,0,0,0.3);
-z-index:999;">
+
+<a href="driver.html" class="driver-float">
 🚛 Join Driver
 </a>
+
 </body>
 </html>
