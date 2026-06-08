@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Request Quote - Kavish Enterprises</title>
+<title>Get Quote - Kavish Enterprises</title>
 
 <style>
 body{
@@ -63,23 +63,40 @@ text-decoration:none;
 
 <form action="https://formspree.io/f/your-form-id" method="POST">
 
-<input type="text" name="company" placeholder="Company Name" required>
+<h3>Customer Details</h3>
 
+<input type="text" name="company_name" placeholder="Company Name" required>
 <input type="text" name="contact_person" placeholder="Contact Person" required>
-
 <input type="text" name="mobile" placeholder="Mobile Number" required>
-
 <input type="email" name="email" placeholder="Email Address">
 
-<input type="text" name="product" placeholder="Product (Fuel/Oil/Chemical/etc)" required>
+<h3>Load Details</h3>
 
-<input type="text" name="quantity" placeholder="Quantity (MT/KL)" required>
+<select name="product" required>
+<option value="">Select Product</option>
+<option>Fuel</option>
+<option>Oil</option>
+<option>Chemical</option>
+<option>Petrochemical</option>
+<option>Other</option>
+</select>
+
+<input type="text" name="quantity" placeholder="Quantity (MT / KL)" required>
+
+<h3>Route Details</h3>
 
 <input type="text" name="loading_point" placeholder="Loading Point" required>
-
 <input type="text" name="unloading_point" placeholder="Unloading Point" required>
-
 <input type="date" name="loading_date" required>
+
+<h3>Tanker Requirement</h3>
+
+<select name="tanker_capacity" required>
+<option value="">Select Capacity</option>
+<option>35 KL</option>
+<option>40 KL</option>
+<option>Any / Not Sure</option>
+</select>
 
 <select name="tanker_type">
 <option>SS Tanker</option>
@@ -87,9 +104,13 @@ text-decoration:none;
 <option>Any</option>
 </select>
 
-<textarea name="remarks" placeholder="Special Instructions / Detention / Notes"></textarea>
+<h3>Additional Information</h3>
 
-<button type="submit">Request Quote</button>
+<textarea name="remarks" placeholder="Special Instructions / Payment Terms / Detention etc."></textarea>
+
+<br><br>
+
+<button type="submit">Get Quote</button>
 
 </form>
 
