@@ -199,6 +199,57 @@ nav ul{flex-wrap:wrap;justify-content:center;}
 html{
 scroll-behavior:smooth;
 }
+.hero-content{
+max-width:650px;
+text-align:left;
+}
+
+.hero-content h1{
+font-size:68px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-content span{
+color:#F5A623;
+}
+
+.hero-content p{
+font-size:22px;
+max-width:650px;
+margin-bottom:20px;
+}
+
+.btn-secondary{
+display:inline-block;
+margin-top:25px;
+margin-left:15px;
+padding:14px 28px;
+background:#0F4C81;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content{
+text-align:center;
+}
+
+.btn-secondary{
+display:block;
+margin:15px auto 0;
+width:fit-content;
+}
+
+}  
 </style>
 </head>
 
@@ -223,9 +274,24 @@ scroll-behavior:smooth;
 
 <section class="hero">
 <div class="hero-content">
-<h1>Pan India Fuel, Oil, Chemical & Petrochemical Transportation</h1>
-<p>Reliable, Safe and Efficient Logistics Solutions Across India.</p>
+
+<h1>
+SAFE, RELIABLE & EFFICIENT<br>
+BULK LIQUID TRANSPORTATION<br>
+<span>ACROSS INDIA</span>
+</h1>
+
+<p>
+Specialized in 35KL & 40KL Stainless Steel Tanker Solutions
+for Fuel, Oil, Chemical & Petrochemical Logistics.
+</p>
+
 <a href="#contact" class="btn">Get In Touch</a>
+
+<a href="#services" class="btn-secondary">
+Our Services
+</a>
+
 </div>
 </section>
 
