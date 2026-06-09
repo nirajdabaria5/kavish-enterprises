@@ -20,7 +20,7 @@ color:#333;
 }
 
 header{
-background:#5a3b1d;
+background:linear-gradient(90deg,#0F4C81,#1A6FB3);
 color:white;
 padding:20px 8%;
 position:sticky;
@@ -54,7 +54,7 @@ font-weight:bold;
 
 /* DRIVER BUTTON */
 .driver-btn{
-background:#d4a017;
+background:#F5A623;
 color:#fff !important;
 padding:8px 14px;
 border-radius:6px;
@@ -96,7 +96,7 @@ margin:auto;
 display:inline-block;
 margin-top:25px;
 padding:14px 28px;
-background:#d4a017;
+background:#F5A623;
 color:white;
 text-decoration:none;
 border-radius:5px;
@@ -112,11 +112,11 @@ padding:70px 8%;
 text-align:center;
 font-size:36px;
 margin-bottom:40px;
-color:#5a3b1d;
+color:#0F4C81;
 }
 
 .about,.contact{
-background:#f7f7f7;
+background:#F7F9FC;
 }
 
 .services-grid{
@@ -128,14 +128,15 @@ gap:20px;
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+border-top:4px solid #F5A623;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 text-align:center;
+transition:0.3s;
 }
 
-.card h3{
-color:#5a3b1d;
-margin-bottom:10px;
+.card:hover{
+transform:translateY(-5px);
 }
 
 .fleet-box{
@@ -196,7 +197,9 @@ z-index:999;
 nav{flex-direction:column;gap:10px;}
 nav ul{flex-wrap:wrap;justify-content:center;}
 }
-
+html{
+scroll-behavior:smooth;
+}
 </style>
 </head>
 
